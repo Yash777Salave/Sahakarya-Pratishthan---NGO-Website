@@ -1,0 +1,74 @@
+/* EducationHistory.css */
+.work-section-wrapper {
+    /* Your styles for the wrapper */
+    
+  }
+  
+  .work-educationsection-top {
+    /* Your styles for the top section */
+    display: block;
+  }
+  
+  .work-info {
+    /* Your styles for the work info section */
+  }
+  
+  .row-sub-projects {
+    /* Your styles for each project row */
+  }
+  
+  .img-fluid {
+    /* Your styles for the images */
+  }
+  
+  .bg-white {
+    background-color: white;
+  }
+  
+  .text-black {
+    color: black;
+  }
+  
+  .rounded-xl {
+    border-radius: 0.75rem; /* Change this value for different roundness */
+  }
+  
+  .h-450px {
+    height: 450px;
+  }
+  
+  .rounded-t-xl {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+  
+  .bg-indingo-500 {
+    background-color: #4B0082; /* Adjust this to your indigo color */
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .h-44 {
+    height: 11rem; /* Adjust this as needed */
+  }
+  
+  .w-44 {
+    width: 11rem; /* Adjust this as needed */
+  }
+  
+  .mt-20 {
+    margin-top: 5rem; /* Adjust this as needed */
+  }
+  
+  /* Add any other styles you need */
+  
