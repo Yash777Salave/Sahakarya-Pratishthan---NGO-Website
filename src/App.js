@@ -33,6 +33,7 @@ function App() {
           <Route path='/extraActivity' element={<ExtraActivities />} />
           <Route path='/team' element={<Team />} />
           {/* You can add other routes here as needed */}
+          {/* You can add other routes here as needed */}
         </Routes>
 
         {/* Components rendered outside of the routes but inside the Router */}
