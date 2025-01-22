@@ -16,6 +16,7 @@ import FoodDonation from "./Components/FoodDonation/FoodDonation";
 import ExtraActivities from "./Components/ExtraActivities/ExtraActivities";
 import Team from "./Components/ExtraActivities/FooterComponent/Team";
 //image length= width 1344 ,length =524
+
 function App() {
   return (
     <div className="App">

@@ -8,8 +8,8 @@ const FoodDonation= () =>
 {
 
     const images = [
-        shivjayanti,
-        shivjayanti21,
+        // shivjayanti,
+        // shivjayanti21,
         shivjayanti24, // the imported image
      
       ];
