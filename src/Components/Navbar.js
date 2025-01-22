@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import Logo from "../Assets/Logo.jpg";
+import Logo from "../Assets/SahakaryaLOGO.png";
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
@@ -45,7 +45,7 @@ const Navbar = () => {
     <div className="menu">
     <nav className="container">
       <div className="nav-logo-container">
-        <img style={{width:86}} src={Logo} alt="" />
+        <img style={{width:106}} src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
         <a href="/">Home</a>
