@@ -205,7 +205,7 @@ nav {
   display: flex;
 }
 .footer-address {
-  color: white; /* Set text color to white */
+  color: '#000'; /* Set text color to white */
 }
 
 .footer-logo-container {
@@ -235,7 +235,7 @@ nav {
 .footer-section-columns span {
   margin: 0.25rem 0rem;
   font-weight: 600;
-  color: white;
+  color: '#000';  
   cursor: pointer;
 }
 
@@ -248,6 +248,7 @@ nav {
   align-items: center;
   justify-content: center;
   max-width: 750px;
+  max-height: 500px;
   border-radius: 2rem;
   flex-direction: column;
   text-align: center;

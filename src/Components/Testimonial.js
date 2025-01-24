@@ -24,14 +24,15 @@ const Testimonial = () => {
   const intervalRef = useRef(null); // To keep track of the interval
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex + 1) % testimonialsData.length // Loop back to the start
+    setCurrentIndex(
+      (prevIndex) => (prevIndex + 1) % testimonialsData.length // Loop back to the start
     );
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex - 1 + testimonialsData.length) % testimonialsData.length // Loop back to the end
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + testimonialsData.length) % testimonialsData.length // Loop back to the end
     );
   };
 
@@ -70,22 +71,26 @@ const Testimonial = () => {
   const { name, text, image } = testimonialsData[currentIndex];
 
   return (
-    <div className="work-section-wrapper" style={{ backgroundColor: '#fffaf0' }}>
-
+    <div
+      className="work-section-wrapper"
+      style={{ backgroundColor: "#fffaf0" }}
+    >
       <div className="work-section-top">
-      <div className="heading1 heading05">
-                    <h3>
-                        <span className="stories-of">Impactful</span>
-                        <span className="heading-font color-font5 signature-style">Words</span>
-                    </h3>
-                </div>
+        <div className="heading1 heading05">
+          <h3>
+            <span className="stories-of">Impactful</span>
+            <span className="heading-font color-font5 signature-style">
+              Words
+            </span>
+          </h3>
+        </div>
       </div>
       <div
         className="testimonial-section-bottom"
         onMouseEnter={() => setIsHovering(true)} // Set hovering to true when mouse enters
         onMouseLeave={() => setIsHovering(false)} // Set hovering to false when mouse leaves
       >
-        <img src={image} alt={name}  className="reviewImage"/>
+        <img src={image} alt={name} className="reviewImage" />
         <h2>{text}</h2>
         <div className="testimonials-stars-container">
           <AiFillStar />

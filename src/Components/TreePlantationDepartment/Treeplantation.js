@@ -10,8 +10,8 @@ const Treeplantation= ()=>
     
     const images = [
         shivjayanti,
-        shivjayanti21,
-        shivjayanti24, // the imported image
+        // shivjayanti21,
+        // shivjayanti24, // the imported image
      
       ];
 
