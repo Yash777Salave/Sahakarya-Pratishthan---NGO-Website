@@ -15,6 +15,8 @@ import WaterWildlife from "./Components/WaterForWildLife/WaterWildlife";
 import FoodDonation from "./Components/FoodDonation/FoodDonation";
 import ExtraActivities from "./Components/ExtraActivities/ExtraActivities";
 import Team from "./Components/ExtraActivities/FooterComponent/Team";
+import Donation from "./Components/Donation/Donation";
+
 //image length= width 1344 ,length =524
 function App() {
   return (
@@ -32,6 +34,9 @@ function App() {
           <Route path='/foodDonation' element={<FoodDonation />} />
           <Route path='/extraActivity' element={<ExtraActivities />} />
           <Route path='/team' element={<Team />} />
+          <Route path = '/donateUs' element={<Donation/> }/>
+          {/* <Route path = '/donateUs' element={<Education/> }/> */}
+
           {/* You can add other routes here as needed */}
           {/* You can add other routes here as needed */}
         </Routes>

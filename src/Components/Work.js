@@ -8,6 +8,8 @@ import donateFood from "../Assets/contributionImage/donateFood.jpg";
 import CountUp from 'react-countup';
 import { useNavigate } from 'react-router-dom';
 import fourthImage from "../Assets/homeImages/fourthImage.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Work = () => {
 
@@ -65,13 +67,13 @@ const Work = () => {
 
   return (
     <>
-      <div className="work-section-wrapper pt-5 pb-5">
+      <div className="work-section-wrapper pt-5 pb-5" >
         <div className="container">
         <div className="work-section-top">
         <div className="heading1 heading05">
         <h3>
  
-      <span style={{ marginRight: "10px" }}>OUR</span>
+      <span style={{ marginRight: "10px" }} >OUR</span>
   <span style={{ marginLeft: "10px" ,textDecoration: "underline" }} className="heading-font color-font5 signature-style">
     Impact
   </span>
