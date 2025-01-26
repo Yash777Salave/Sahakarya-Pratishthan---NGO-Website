@@ -470,7 +470,7 @@ getTotalDonation();
                           color="primary"
                         />
                       }
-                      label="You agree that Smile Foundation can reach out to you through Whatsapp/email/SMS/Phone to provide information of your donation, campaigns, 80G receipt etc."
+                      label="You agree that Sahakarya Pratishthan can reach out to you through Whatsapp/email/SMS/Phone to provide information of your donation, campaigns, 80G receipt etc."
                     />
                     {errors.agreeToTerms && (
                       <Typography variant="caption" color="error">

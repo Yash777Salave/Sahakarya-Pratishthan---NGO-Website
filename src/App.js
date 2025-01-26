@@ -6,7 +6,7 @@ import Work from "./Components/Work";
 import Testimonial from "./Components/Testimonial";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Education from "./Components/EducationDepartment/Education";
 import Health from "./Components/HealthDepartment/Health";
 import MainLayout from "./Components/MainLayout";
@@ -27,23 +27,22 @@ function App() {
         {/* Define Routes */}
         <ScrollToTop />
         <Routes>
-        <Route path="/" element={<MainLayout />} />
-          <Route path='/education' element={<Education />} />
-          <Route path='/health' element={<Health />} />
-          <Route path='/treeplantation' element={<Treeplantation />} />
-          <Route path='/waterwildlife' element={<WaterWildlife />} />
-          <Route path='/foodDonation' element={<FoodDonation />} />
-          <Route path='/extraActivity' element={<ExtraActivities />} />
-          <Route path='/team' element={<Team />} />
-          <Route path = '/donateUs' element={<Donation/> }/>
-          {/* <Route path = '/donateUs' element={<Education/> }/> */}
+          <Route path="/" element={<MainLayout />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/health" element={<Health />} />
+          <Route path="/treeplantation" element={<Treeplantation />} />
+          <Route path="/waterwildlife" element={<WaterWildlife />} />
+          <Route path="/foodDonation" element={<FoodDonation />} />
+          <Route path="/extraActivity" element={<ExtraActivities />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/donateUs" element={<Donation />} />
+          <Route path="/about" element={<About />} />
 
           {/* You can add other routes here as needed */}
           {/* You can add other routes here as needed */}
         </Routes>
 
         {/* Components rendered outside of the routes but inside the Router */}
-    
       </Router>
     </div>
   );
