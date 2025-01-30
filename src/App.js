@@ -37,6 +37,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/donateUs" element={<Donation />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
 
           {/* You can add other routes here as needed */}
           {/* You can add other routes here as needed */}

@@ -6,7 +6,6 @@ import Tejaswini2 from "../../../Assets/Team/Tejaswini2.jpg";
 import Vaishali from "../../../Assets/Team/Vaishali.jpg";
 import akshayblacky from "../../../Assets/Team/akshayblacky.jpg";
 import akshaypatil from "../../../Assets/Team/akshaypatil.jpg";
-import akshayT from "../../../Assets/Team/akshayT.jpg";
 import amol from "../../../Assets/Team/amol.jpg";
 import bhupesh from "../../../Assets/Team/bhupesh.jpg";
 import chiku from "../../../Assets/Team/chiku.jpg";
