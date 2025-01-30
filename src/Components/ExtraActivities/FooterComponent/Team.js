@@ -118,12 +118,12 @@ const Team = () => {
       text: "Field Officer",
     },
     {
-      image: Tejaswini,
+      image: DeliveryMeals,
       title: "Tejaswini Kotkar",
       text: "Field Officer",
     },
     {
-      image: Vaishali,
+      image: DeliveryMeals,
       title: "Vaishali Shrirao",
       text: "Digital Creator (YouTube)",
     },
