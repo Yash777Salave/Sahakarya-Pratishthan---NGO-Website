@@ -25,6 +25,7 @@ import tejas2 from "../../../Assets/Team/tejas2.jpg";
 import tejaspadvi from "../../../Assets/Team/tejaspadvi.jpg";
 import yashBaba from "../../../Assets/Team/yashBaba.jpg";
 import parth from "../../../Assets/Team/parth.jpg";
+import Mane from "../../../Assets/Team/Mane.jpg";
 import CountUp from "react-countup";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../Footer";
@@ -151,6 +152,11 @@ const Team = () => {
     {
       image: gym,
       title: "Akshay Patil",
+      text: "Field Officer",
+    },
+    {
+      image: Mane,
+      title: "Akshay Mane",
       text: "Field Officer",
     },
   ];

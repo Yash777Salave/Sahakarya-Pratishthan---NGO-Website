@@ -565,11 +565,13 @@ h2 {
   border-radius: 1rem;
   color: #505050;
   margin: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .work-section-info h2 {
   margin: 1rem 0rem;
 }
-/* .work-section-bottom {
+.work-section-bottom {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
@@ -581,24 +583,13 @@ h2 {
   display: flex;
   align-items: center;
   font-weight: 600;
-} */
-
-.work-section-bottom {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 100px;
-  padding: 40px;
-  justify-content: center;
-  text-align: center;
 }
 
-.work-section-info {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+
+
+
+
+/* ------------------ */
 
 .work-section-info:hover {
   transform: translateY(-5px);
@@ -631,6 +622,24 @@ h2 {
   color: #666;
   margin: 5px 0;
 }
+@media (max-width: 1024px) {
+  .work-section-info {
+    width: calc(33.33% - 20px); /* 3 cards per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .work-section-info {
+    width: calc(50% - 20px); /* 2 cards per row on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .work-section-info {
+    width: 100%; /* 1 card per row on mobile */
+  }
+}
+
 
 
 @media (max-width: 1000px) {
