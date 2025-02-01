@@ -722,6 +722,25 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Footer";
 import shivjayanti from "../../Assets/shivjayanti.jpg";
+import food1 from "../../Assets/Food/firstSlide/food1.jpg";
+import food30 from "../../Assets/Food/firstSlide/food30.jpg";
+import food9 from "../../Assets/Food/firstSlide/food9.jpg";
+import food19 from "../../Assets/Food/firstSlide/food19.jpg";
+import food3 from "../../Assets/Food/secondSlide/food3.jpg";
+import food4 from "../../Assets/Food/secondSlide/food4.jpg";
+import food6 from "../../Assets/Food/secondSlide/food6.jpg";
+import food8 from "../../Assets/Food/secondSlide/food8.jpg";
+import food15 from "../../Assets/Food/secondSlide/food15.jpg";
+import food16 from "../../Assets/Food/secondSlide/food16.jpg";
+import food18 from "../../Assets/Food/secondSlide/food18.jpg";
+import food7 from "../../Assets/Food/thirdSlide/food7.jpg";
+import food10 from "../../Assets/Food/thirdSlide/food10.jpg";
+import food13 from "../../Assets/Food/thirdSlide/food13.jpg";
+import food14 from "../../Assets/Food/thirdSlide/food14.jpg";
+import food2 from "../../Assets/Food/fourthSlide/food2.jpg";
+import food5 from "../../Assets/Food/fourthSlide/food5.jpg";
+import food12 from "../../Assets/Food/fourthSlide/food12.jpg";
+import food17 from "../../Assets/Food/fourthSlide/food17.jpg";
 import shivjayanti21 from "../../Assets/shivjayanti21.jpg";
 import shivjayanti24 from "../../Assets/shivjayanti24.jpg";
 import youthmentoring from "../../Assets/contributionImage/youth-mentoring.png";
@@ -737,30 +756,30 @@ const FoodDonationHistory = () => {
 
   const workInfoData = [
     {
-      images: [shivjayanti, shivjayanti21, shivjayanti24],
-      title: "Education",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      images: [food30,food1, food9, food19],
+      title: "Food Donation for a Noble Cause",
+      text: "our team at Sahakarya Pratisthan had the privilege of extending a helping hand to an elderly woman who has been facing tough times. After recently suffering a serious hand injury in an accident, she has been struggling with both her health and daily needs. We provided her with a care package, including dry fruits, to support her recovery and offer some comfort during this difficult period.",
     },
     {
-      images: [shivjayanti21, shivjayanti, shivjayanti24],
-      title: "Medical Sector",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      images: [food8, food6, food4, food3, food15, food16, food18],
+      title: "Spreading Love and Kindness this Rakhi Purnima (22 Aug 2022)",
+      text: "On the auspicious occasion of Rakhi Purnima, our team at Sahakarya Pratisthan embraced the spirit of giving by distributing grains and food to those in need. Rakhi is a time for family bonds and love, and we wanted to extend that love to those who are facing hardships. By sharing essentials with underprivileged individuals, we aimed to bring smiles and warmth to their lives.",
     },
     {
-      images: [shivjayanti24, shivjayanti, shivjayanti21],
-      title: "Tree Plantation",
+      images: [food7, food10, food13, food14],
+      title: "Celebrating Independence with Compassion (15 Aug 2023)",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
     },
     {
-      images: [shivjayanti24, shivjayanti, shivjayanti21],
-      title: "Tree Plantation",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      images: [food2, food5, food12, food17],
+      title: "Spreading Compassion at Navanirman Samaj Sevak Sangh (18 Nov 2023)",
+      text: "On this special occasion, our team at Sahakarya Pratisthan had the privilege of visiting the Navanirman Samaj Sevak Sangh Kushtharogi Aarshram, where we distributed essential grains and food to those affected by leprosy. These individuals, who are facing significant challenges, were able to receive much-needed support and nourishment.",
     },
-    {
-      images: [shivjayanti24, shivjayanti, shivjayanti21],
-      title: "Tree Plantation",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
-    },
+    // {
+    //   images: [shivjayanti24, shivjayanti, shivjayanti21],
+    //   title: "Tree Plantation",
+    //   text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+    // },
   ];
 
   const reviewData = [

@@ -319,6 +319,31 @@ import Footer from "../Footer";
 import shivjayanti from "../../Assets/shivjayanti.jpg";
 import shivjayanti21 from "../../Assets/shivjayanti21.jpg";
 import shivjayanti24 from "../../Assets/shivjayanti24.jpg";
+import extra9 from "../../Assets/ExtraActivity/firstSlide/extra9.jpg";
+import extra17 from "../../Assets/ExtraActivity/firstSlide/extra17.jpg";
+import extra23 from "../../Assets/ExtraActivity/firstSlide/extra23.jpg";
+import extra2 from "../../Assets/ExtraActivity/secondSlide/extra2.jpg";
+import extra3 from "../../Assets/ExtraActivity/secondSlide/extra3.jpg";
+import extra4 from "../../Assets/ExtraActivity/secondSlide/extra4.jpg";
+import extra7 from "../../Assets/ExtraActivity/secondSlide/extra7.jpg";
+import extra11 from "../../Assets/ExtraActivity/secondSlide/extra11.jpg";
+import extra12 from "../../Assets/ExtraActivity/secondSlide/extra12.jpg";
+import extra21 from "../../Assets/ExtraActivity/secondSlide/extra21.jpg";
+import extra25 from "../../Assets/ExtraActivity/secondSlide/extra25.jpg";
+import extra1 from "../../Assets/ExtraActivity/thirdSlide/extra1.jpg";
+import extra5 from "../../Assets/ExtraActivity/thirdSlide/extra5.jpg";
+import extra6 from "../../Assets/ExtraActivity/thirdSlide/extra6.jpg";
+import extra8 from "../../Assets/ExtraActivity/thirdSlide/extra8.jpg";
+import extra10 from "../../Assets/ExtraActivity/thirdSlide/extra10.jpg";
+import extra13 from "../../Assets/ExtraActivity/thirdSlide/extra13.jpg";
+import extra14 from "../../Assets/ExtraActivity/thirdSlide/extra14.jpg";
+import extra15 from "../../Assets/ExtraActivity/thirdSlide/extra15.jpg";
+import extra18 from "../../Assets/ExtraActivity/thirdSlide/extra18.jpg";
+import extra19 from "../../Assets/ExtraActivity/thirdSlide/extra19.jpg";
+import extra22 from "../../Assets/ExtraActivity/thirdSlide/extra22.jpg";
+import extra24 from "../../Assets/ExtraActivity/thirdSlide/extra24.jpg";
+import extra26 from "../../Assets/ExtraActivity/thirdSlide/extra26.jpg";
+import extra120 from "../../Assets/ExtraActivity/thirdSlide/extra120.jpg";
 import youthmentoring from "../../Assets/contributionImage/youth-mentoring.png";
 import Slide from "../Slide";
 import Font, { Text } from "react-font";
@@ -332,30 +357,55 @@ const ExtraActivityHistory = () => {
 
   const workInfoData = [
     {
-      images: [shivjayanti, shivjayanti21, shivjayanti24],
-      title: "Education",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      images: [extra23, extra17, extra9],
+      title: "Helping Hands in Flood Relief",
+      text: "In the wake of the devastating floods, our team at Sahakarya Pratishthan came together to support those affected by this natural disaster. We sent essential food items, including biscuits, grains, and other necessities, to help provide immediate relief to families in need.",
     },
     {
-      images: [shivjayanti21, shivjayanti, shivjayanti24],
-      title: "Medical Sector",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      images: [
+        extra2,
+        extra3,
+        extra4,
+        extra7,
+        extra11,
+        extra12,
+        extra21,
+        extra25,
+      ],
+      title: "Supporting Our Community During COVID-19",
+      text: "During the challenging times of the COVID-19 pandemic, our team at Sahakarya Pratishthan worked tirelessly to support those most affected by the crisis. We distributed essential supplies, including food, biscuits, and clothes, to help families and individuals struggling to meet their basic needs. ",
     },
     {
-      images: [shivjayanti24, shivjayanti, shivjayanti21],
-      title: "Tree Plantation",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      images: [
+        extra1,
+        extra5,
+        extra6,
+        extra8,
+        extra10,
+        extra13,
+        extra14,
+        extra15,
+        extra18,
+        extra19,
+        extra22,
+        extra24,
+        extra26,
+        extra120,
+      ],
+      title:
+        "Embracing Creativity – Drawing Competition for Physically Disabled Individuals",
+      text: "At Sahakarya Pratishthan, we had the privilege of organizing a drawing competition at Sanskar Matimand Aashram, where we brought together physically disabled individuals to express their creativity through art. With the support of our team, we provided drawing books, colors, and brushes to empower the participants and encourage them to showcase their incredible talents.",
     },
-    {
-      images: [shivjayanti24, shivjayanti, shivjayanti21],
-      title: "Tree Plantation",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
-    },
-    {
-      images: [shivjayanti24, shivjayanti, shivjayanti21],
-      title: "Tree Plantation",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
-    },
+    // {
+    //   images: [shivjayanti24, shivjayanti, shivjayanti21],
+    //   title: "Tree Plantation",
+    //   text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+    // },
+    // {
+    //   images: [shivjayanti24, shivjayanti, shivjayanti21],
+    //   title: "Tree Plantation",
+    //   text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+    // },
   ];
 
   const reviewData = [

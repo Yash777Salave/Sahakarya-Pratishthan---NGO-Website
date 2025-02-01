@@ -807,7 +807,7 @@ const WaterWildLifeHistory = () => {
               marginBottom: "20px",
             }}
           >
-            Why Tree Plantation?
+            Why Water for Wild life?
           </p>
           <p>
             Water is a fundamental necessity for all living beings, and its

@@ -324,11 +324,30 @@ import fifthImage from "../../Assets/Education/storiesOfChange/fifthImage.jpg";
 import sixthImage from "../../Assets/Education/storiesOfChange/sixthImage.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import education1 from "../../Assets/Education/firstSlide/education1.jpg";
-import education2 from "../../Assets/Education/firstSlide/education2.jpg";
-import education3 from "../../Assets/Education/firstSlide/education3.jpg";
-import education4 from "../../Assets/Education/firstSlide/education4.jpg";
-import education5 from "../../Assets/Education/firstSlide/education5.jpg";
+import tree1 from "../../Assets/Tree/firstSlide/tree1.webp";
+import tree2 from "../../Assets/Tree/firstSlide/tree2.webp";
+import tree3 from "../../Assets/Tree/firstSlide/tree3.webp";
+import tree4 from "../../Assets/Tree/firstSlide/tree4.webp";
+import tree5 from "../../Assets/Tree/firstSlide/tree5.webp";
+import tree6 from "../../Assets/Tree/firstSlide/tree6.webp";
+import tree7 from "../../Assets/Tree/firstSlide/tree7.jpg";
+
+import tree8 from "../../Assets/Tree/secondSlide/tree8.jpg";
+import tree9 from "../../Assets/Tree/secondSlide/tree9.jpg";
+import tree10 from "../../Assets/Tree/secondSlide/tree10.jpg";
+import tree11 from "../../Assets/Tree/secondSlide/tree11.jpg";
+import tree12 from "../../Assets/Tree/secondSlide/tree12.jpg";
+import tree13 from "../../Assets/Tree/secondSlide/tree13.jpg";
+import tree14 from "../../Assets/Tree/secondSlide/tree14.jpg";
+import tree15 from "../../Assets/Tree/secondSlide/tree15.jpg";
+import tree16 from "../../Assets/Tree/secondSlide/tree16.jpg";
+import tree18 from "../../Assets/Tree/thirdSlide/tree18.jpg";
+import tree19 from "../../Assets/Tree/thirdSlide/tree19.jpg";
+import tree20 from "../../Assets/Tree/thirdSlide/tree20.jpg";
+import tree21 from "../../Assets/Tree/thirdSlide/tree21.jpg";
+import tree22 from "../../Assets/Tree/thirdSlide/tree22.jpg";
+import tree23 from "../../Assets/Tree/thirdSlide/tree23.jpg";
+import tree24 from "../../Assets/Tree/thirdSlide/tree24.jpg";
 import education6 from "../../Assets/Education/firstSlide/education6.jpg";
 import education7 from "../../Assets/Education/firstSlide/education7.jpg";
 import education8 from "../../Assets/Education/firstSlide/education8.jpg";
@@ -371,69 +390,67 @@ const TreePlantationhistory = () => {
   const workInfoData = [
     {
       images: [
-        education1,
-        education2,
-        education3,
-        education4,
-        education5,
-        education6,
-        education7,
-        education8,
-        education9,
-        education10,
+        tree7,
+        tree2,
+        tree3,
+        tree4,
+        tree5,
+        tree6,
+        tree1,
+
       ],
-      title: "Shivaji Maratha Bording School,Dhule (19 Feb 2022)",
-      text: "On the special occasion of Shiv Jayanti, our team at Sahkarya Pratisthan took a heartfelt initiative to inspire and support the young minds at the Shivaji Maratha Boarding School. Recognizing the challenges faced by the 60 orphaned students, we donated school bags to provide them with essential educational tools. Additionally, we organized a comprehensive medical camp to address their healthcare needs and ensure their well-being. This initiative aimed to motivate these children, instill hope, and empower them through education and good health. The event stood as a tribute to Chhatrapati Shivaji Maharaj's vision of uplifting the underprivileged and fostering a brighter future for all.",
+      title: "Shree SVKM collage of Engineering",
+      text: "On this special occasion, our team at Sahakarya Pratishthan organized a tree plantation drive at Shree SVKM College of Engineering. With a focus on promoting sustainability and environmental awareness, we planted numerous trees to contribute to a greener and healthier planet. Our team, along with the students and staff",
     },
     {
       images: [
-        education11,
-        education12,
-        education13,
-        education14,
-        education15,
-        education16,
-        education17,
-        education18,
-        education19,
-        education20,
+        tree8,
+        tree9,
+        tree10,
+        tree11,
+        tree12,
+        tree13,
+        tree14,
+        tree15,
+        tree16,
+  
       ],
-      title: "Kamlabai Girls High School,Dhule (19 Feb 2023)",
-      text: "On the auspicious occasion of Shiv Jayanti, Sahkarya Pratisthan extended its support to the young girls at Kamlabai Girls High School in Dhule. Understanding the challenges faced by orphaned students, we donated 80 school bags and notebooks to empower their educational journey. This initiative was driven by our commitment to providing equal opportunities for education and growth. Through this gesture, we aimed to inspire these young girls to pursue their dreams and honor the legacy of Chhatrapati Shivaji Maharaj, who championed the cause of upliftment and empowerment for all. ",
+      title: "Shree Raje Chatrapati Sambhaji vidyalaya, Dhule",
+      text: "We Sahakarya Pratishthan organized a tree plantation drive at Shree Raje Chatrapati Sambhaji vidyalaya,Dhule This initiative is our way of honoring the importance of nature and instilling a sense of responsibility towards the environment in young minds. Let's continue to work together for a better tomorrow! 🌱🌍With a focus on promoting sustainability and environmental awareness, we planted numerous trees to contribute to a greener and healthier planet.  ",
     },
     {
-      images: [education21, education22, education23, education24],
-      title: "Shree Sanskar Matimand School,Dhule (4 Jun 2023)",
-      text: "At Shree Sanskar Matimand School, an institution dedicated to the education of blind and specially-abled girls, Sahkarya Pratisthan extended its support by donating essential educational equipment. Additionally, we organized a workshop aimed at enhancing their future educational opportunities and personal development. This initiative was undertaken to empower these young girls, helping them overcome challenges and unlock their true potential. Guided by our mission of inclusivity and education for all, we are proud to contribute to shaping a brighter future for these remarkable students.",
+      images: [tree18, tree19, tree20, tree21,tree22,tree23,tree24],
+      title: "Satpura HighSchool,Dhule",
+      text: "At Sahakarya Pratishthan, we believe in the power of green spaces to bring about positive change. Today, on the campus of At Satpura HighSchool,Dhule, we hosted a tree plantation drive aimed at creating a more sustainable future. ",
     },
-    {
-      images: [
-        education31,
-        education32,
-        education33,
-        education34,
-        education35,
-        education36,
-        education37,
-        education38,
-        education39,
-        education40,
-      ],
-      title: "Blind Boys & Girls School,Dhule (19 Feb 2024)",
-      text: "On 19th February 2024, our NGO had the privilege of supporting the Blind Boys & Girls School in Dhule by donating school uniforms and talking watches to the students. These donations aim to empower visually impaired children, providing them with tools to foster independence and confidence in their daily lives.The event was graced by the presence of Dhule SP, Shri Shrikant Dhivare, who honored us with his valuable time and support. This initiative reflects our continued commitment to the education and well-being of differently-abled students, helping them overcome challenges and achieve their dreams.",
-    },
-    {
-      images: [
-        education41,
-        education42,
-        education43,
-        education44,
-        education45,
-        education46,
-      ],
-      title: "Anand Vihar Ashram,Dhule (15 Oct 2024)",
-      text: "On 15th September 2024, our NGO organized a heartfelt program at Anand Vihar Ashram, Dhule, to support 55 orphaned students by donating school bags. This initiative was arranged to commemorate the spirit of Independence Day, fostering a sense of encouragement and empowerment among these young minds.The program aimed to inspire the children to pursue their education with enthusiasm and confidence, symbolizing our dedication to their holistic development. This small gesture is a step towards ensuring that every child has the tools they need to succeed and contribute positively to society.",
-    },
+    // {
+    //   images: [
+    //     education31,
+    //     education32,
+    //     education33,
+    //     education34,
+    //     education35,
+    //     education36,
+    //     education37,
+    //     education38,
+    //     education39,
+    //     education40,
+    //   ],
+    //   title: "Blind Boys & Girls School,Dhule (19 Feb 2024)",
+    //   text: "On 19th February 2024, our NGO had the privilege of supporting the Blind Boys & Girls School in Dhule by donating school uniforms and talking watches to the students. These donations aim to empower visually impaired children, providing them with tools to foster independence and confidence in their daily lives.The event was graced by the presence of Dhule SP, Shri Shrikant Dhivare, who honored us with his valuable time and support. This initiative reflects our continued commitment to the education and well-being of differently-abled students, helping them overcome challenges and achieve their dreams.",
+    // },
+    // {
+    //   images: [
+    //     education41,
+    //     education42,
+    //     education43,
+    //     education44,
+    //     education45,
+    //     education46,
+    //   ],
+    //   title: "Anand Vihar Ashram,Dhule (15 Oct 2024)",
+    //   text: "On 15th September 2024, our NGO organized a heartfelt program at Anand Vihar Ashram, Dhule, to support 55 orphaned students by donating school bags. This initiative was arranged to commemorate the spirit of Independence Day, fostering a sense of encouragement and empowerment among these young minds.The program aimed to inspire the children to pursue their education with enthusiasm and confidence, symbolizing our dedication to their holistic development. This small gesture is a step towards ensuring that every child has the tools they need to succeed and contribute positively to society.",
+    // },
   ];
 
   const reviewData = [
