@@ -1,6 +1,6 @@
 import shivjayanti24 from "../../Assets/shivjayanti24.jpg";
 import shivjayanti from "../../Assets/shivjayanti.jpg";
-import shivjayanti21 from "../../Assets/shivjayanti21.jpg";
+import firstImage from "../../Assets/homeImages/firstImage.jpg";
 import { useState,useEffect } from "react";
 import Navbar from "../Navbar";
 import WaterWildLifeHistory from "./WaterWildLifeHistory";
@@ -8,7 +8,7 @@ const WaterWildlife = () =>
 {
 
     const images = [
-        shivjayanti,
+      firstImage,
         // shivjayanti21,
         // shivjayanti24, // the imported image
      

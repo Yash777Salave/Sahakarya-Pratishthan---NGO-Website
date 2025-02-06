@@ -1,6 +1,6 @@
 import shivjayanti24 from "../../Assets/shivjayanti24.jpg";
 import shivjayanti from "../../Assets/shivjayanti.jpg";
-import shivjayanti21 from "../../Assets/shivjayanti21.jpg";
+import thirdImage from "../../Assets/homeImages/thirdImage.jpg";
 import { useState,useEffect } from "react";
 import Navbar from "../Navbar";
 import HealthHistory from "./HealthHistory";
@@ -8,7 +8,7 @@ const Health = () =>
 {
 
     const images = [
-        shivjayanti,
+      thirdImage,
         // shivjayanti21,
         // shivjayanti24, // the imported image
      

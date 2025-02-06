@@ -638,7 +638,9 @@ import secondImage from "../../Assets/Education/storiesOfChange/secondImage.jpg"
 import thirdImage from "../../Assets/Education/storiesOfChange/thirdImage.jpg";
 import fourthImage from "../../Assets/Education/storiesOfChange/fourthImage.jpg";
 import fifthImage from "../../Assets/Education/storiesOfChange/fifthImage.jpg";
-import sixthImage from "../../Assets/Education/storiesOfChange/sixthImage.jpg";
+import face1 from "../../Assets/waterForWild/StoriesOfChange/face1.webp";
+import face2 from "../../Assets/waterForWild/StoriesOfChange/face2.jpg";
+import face3 from "../../Assets/waterForWild/StoriesOfChange/face3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import education1 from "../../Assets/Education/firstSlide/education1.jpg";
@@ -684,6 +686,14 @@ import education46 from "../../Assets/Education/fifthSlide/education46.jpg";
 
 const WaterWildLifeHistory = () => {
   const navigate = useNavigate();
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false, // Set this to false to hide the arrows
+  };
 
   const workInfoData = [
     {
@@ -755,40 +765,22 @@ const WaterWildLifeHistory = () => {
 
   const reviewData = [
     {
-      images: firstImage,
-      name: "Pratik jagdale",
+      images: face1,
+      name: "Sudha Panwar",
       review:
         "Sahkarya Pratisthan has truly transformed my life. They encouraged me to pursue my education and supported me with the essentials I needed to continue learning. Even a small amount of their help has made a huge difference in shaping my future.",
     },
     {
-      images: secondImage,
-      name: "Mohini Chaudhari",
+      images: face2,
+      name: "Mohit Chaudhari",
       review:
         "I am deeply grateful to Sahkarya Pratisthan for changing my life. Their encouragement toward education and the provision of essential supplies have given me the confidence to move forward. Even the little support I receive from them has a meaningful impact on my journey.",
     },
     {
-      images: thirdImage,
-      name: "Nikita",
+      images: face3,
+      name: "Kiran Pawar",
       review:
         "Thanks to Sahkarya Pratisthan, my life has taken a positive turn. Their motivation for me to focus on education, along with the essential supplies they provide, has made a significant difference. Even a small amount of support from them has helped me progress toward my goals.",
-    },
-    {
-      images: fourthImage,
-      name: " Mina Patil",
-      review:
-        "Sahkarya Pratisthan has been a beacon of hope in my life. Their unwavering support and encouragement have inspired me to pursue education with determination. By providing the necessary resources and essentials, they have given me the tools to grow and achieve my dreams. Even their smallest gesture of support has had a profound impact on my journey.",
-    },
-    {
-      images: fifthImage,
-      name: "Chaitali",
-      review:
-        "My life has improved significantly thanks to Sahkarya Pratisthan. They empowered me to believe in the power of education and ensured I had the resources needed to stay on track. Their thoughtful support, no matter how small, has opened doors to opportunities I never thought possible and has brought me closer to realizing my potential.",
-    },
-    {
-      images: sixthImage,
-      name: "Mayur Wankhede",
-      review:
-        "I owe a great deal of gratitude to Sahkarya Pratisthan for changing my life. They not only encouraged me to prioritize my education but also provided the essentials to support my journey. Their consistent care and even the smallest support have given me the confidence to move forward and create a brighter future for myself.",
     },
   ];
 
@@ -900,7 +892,7 @@ const WaterWildLifeHistory = () => {
           </h3>
         </div>
 
-        <div className="reviews">
+        {/* <div className="reviews">
           {reviewData.map((item, index) => (
             <div className="review-card" key={index}>
               <img src={item.image} alt={item.name} className="review-image" />
@@ -908,6 +900,28 @@ const WaterWildLifeHistory = () => {
               <p className="review-text">{item.review}</p>
             </div>
           ))}
+        </div> */}
+        <div className="w-3/4 m-auto">
+          <div className="mt-4">
+            <Slider {...settings}>
+              {reviewData.map((d, index) => (
+                <div className="education-card" key={index}>
+                  <div className="education-card-header">
+                    <img
+                      src={d.images}
+                      alt={d.name}
+                      className="h-44 w-44 rounded-full"
+                    />
+                  </div>
+                  <div className="education-card-content">
+                    <p className="education-card-name">{d.name}</p>
+                    <p>{d.review}</p>
+                    {/* <button className="education-card-button">Read More</button> */}
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
       <Footer />

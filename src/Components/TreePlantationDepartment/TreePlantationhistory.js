@@ -348,7 +348,9 @@ import tree21 from "../../Assets/Tree/thirdSlide/tree21.jpg";
 import tree22 from "../../Assets/Tree/thirdSlide/tree22.jpg";
 import tree23 from "../../Assets/Tree/thirdSlide/tree23.jpg";
 import tree24 from "../../Assets/Tree/thirdSlide/tree24.jpg";
-import education6 from "../../Assets/Education/firstSlide/education6.jpg";
+import face1 from "../../Assets/Tree/storiesOfChange/face1.jpg";
+import face2 from "../../Assets/Tree/storiesOfChange/face2.jpg";
+import face3 from "../../Assets/Tree/storiesOfChange/face3.webp";
 import education7 from "../../Assets/Education/firstSlide/education7.jpg";
 import education8 from "../../Assets/Education/firstSlide/education8.jpg";
 import education9 from "../../Assets/Education/firstSlide/education9.jpg";
@@ -386,19 +388,18 @@ import education46 from "../../Assets/Education/fifthSlide/education46.jpg";
 
 const TreePlantationhistory = () => {
   const navigate = useNavigate();
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false, // Set this to false to hide the arrows
+  };
 
   const workInfoData = [
     {
-      images: [
-        tree7,
-        tree2,
-        tree3,
-        tree4,
-        tree5,
-        tree6,
-        tree1,
-
-      ],
+      images: [tree7, tree2, tree3, tree4, tree5, tree6, tree1],
       title: "Shree SVKM collage of Engineering",
       text: "On this special occasion, our team at Sahakarya Pratishthan organized a tree plantation drive at Shree SVKM College of Engineering. With a focus on promoting sustainability and environmental awareness, we planted numerous trees to contribute to a greener and healthier planet. Our team, along with the students and staff",
     },
@@ -413,13 +414,12 @@ const TreePlantationhistory = () => {
         tree14,
         tree15,
         tree16,
-  
       ],
       title: "Shree Raje Chatrapati Sambhaji vidyalaya, Dhule",
       text: "We Sahakarya Pratishthan organized a tree plantation drive at Shree Raje Chatrapati Sambhaji vidyalaya,Dhule This initiative is our way of honoring the importance of nature and instilling a sense of responsibility towards the environment in young minds. Let's continue to work together for a better tomorrow! 🌱🌍With a focus on promoting sustainability and environmental awareness, we planted numerous trees to contribute to a greener and healthier planet.  ",
     },
     {
-      images: [tree18, tree19, tree20, tree21,tree22,tree23,tree24],
+      images: [tree18, tree19, tree20, tree21, tree22, tree23, tree24],
       title: "Satpura HighSchool,Dhule",
       text: "At Sahakarya Pratishthan, we believe in the power of green spaces to bring about positive change. Today, on the campus of At Satpura HighSchool,Dhule, we hosted a tree plantation drive aimed at creating a more sustainable future. ",
     },
@@ -455,40 +455,22 @@ const TreePlantationhistory = () => {
 
   const reviewData = [
     {
-      images: firstImage,
-      name: "Pratik jagdale",
+      images: face1,
+      name: "Pawan Dhoke",
       review:
         "Sahkarya Pratisthan has truly transformed my life. They encouraged me to pursue my education and supported me with the essentials I needed to continue learning. Even a small amount of their help has made a huge difference in shaping my future.",
     },
     {
-      images: secondImage,
-      name: "Mohini Chaudhari",
+      images: face2,
+      name: "Suman Chaudhari",
       review:
         "I am deeply grateful to Sahkarya Pratisthan for changing my life. Their encouragement toward education and the provision of essential supplies have given me the confidence to move forward. Even the little support I receive from them has a meaningful impact on my journey.",
     },
     {
-      images: thirdImage,
-      name: "Nikita",
+      images: face3,
+      name: "Nikhil Pawar",
       review:
         "Thanks to Sahkarya Pratisthan, my life has taken a positive turn. Their motivation for me to focus on education, along with the essential supplies they provide, has made a significant difference. Even a small amount of support from them has helped me progress toward my goals.",
-    },
-    {
-      images: fourthImage,
-      name: " Mina Patil",
-      review:
-        "Sahkarya Pratisthan has been a beacon of hope in my life. Their unwavering support and encouragement have inspired me to pursue education with determination. By providing the necessary resources and essentials, they have given me the tools to grow and achieve my dreams. Even their smallest gesture of support has had a profound impact on my journey.",
-    },
-    {
-      images: fifthImage,
-      name: "Chaitali",
-      review:
-        "My life has improved significantly thanks to Sahkarya Pratisthan. They empowered me to believe in the power of education and ensured I had the resources needed to stay on track. Their thoughtful support, no matter how small, has opened doors to opportunities I never thought possible and has brought me closer to realizing my potential.",
-    },
-    {
-      images: sixthImage,
-      name: "Mayur Wankhede",
-      review:
-        "I owe a great deal of gratitude to Sahkarya Pratisthan for changing my life. They not only encouraged me to prioritize my education but also provided the essentials to support my journey. Their consistent care and even the smallest support have given me the confidence to move forward and create a brighter future for myself.",
     },
   ];
 
@@ -594,7 +576,7 @@ const TreePlantationhistory = () => {
           </h3>
         </div>
 
-        <div className="reviews">
+        {/* <div className="reviews">
           {reviewData.map((item, index) => (
             <div className="review-card" key={index}>
               <img src={item.image} alt={item.name} className="review-image" />
@@ -602,6 +584,29 @@ const TreePlantationhistory = () => {
               <p className="review-text">{item.review}</p>
             </div>
           ))}
+
+        </div> */}
+        <div className="w-3/4 m-auto">
+          <div className="mt-4">
+            <Slider {...settings}>
+              {reviewData.map((d, index) => (
+                <div className="education-card" key={index}>
+                  <div className="education-card-header">
+                    <img
+                      src={d.images}
+                      alt={d.name}
+                      className="h-44 w-44 rounded-full"
+                    />
+                  </div>
+                  <div className="education-card-content">
+                    <p className="education-card-name">{d.name}</p>
+                    <p>{d.review}</p>
+                    {/* <button className="education-card-button">Read More</button> */}
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
       <Footer />

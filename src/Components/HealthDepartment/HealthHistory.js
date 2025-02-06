@@ -421,10 +421,22 @@ import health12 from "../../Assets/Health/thirdSlide/health12.jpg";
 import firstImage from "../../Assets/Education/storiesOfChange/firstImage.jpg";
 import secondImage from "../../Assets/Education/storiesOfChange/secondImage.jpg";
 import thirdImage from "../../Assets/Education/storiesOfChange/thirdImage.jpg";
+import face1 from "../../Assets/Health/storiesOfChange/face1.webp";
+import face2 from "../../Assets/Health/storiesOfChange/face2.jpg";
+import face3 from "../../Assets/Health/storiesOfChange/face3girl.jpg";
+import face4 from "../../Assets/Health/storiesOfChange/face4girl.jpg";
 import Footer from "../Footer";
 
 const HealthHistory = () => {
   const navigate = useNavigate();
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false, // Set this to false to hide the arrows
+  };
 
   const workInfoData = [
     {
@@ -441,20 +453,20 @@ const HealthHistory = () => {
 
   const reviewData = [
     {
-      image: firstImage,
-      name: "Pratik Jagdale",
+      image: face1,
+      name: "Vijay Patil",
       review:
         "Sahakarya Pratisthan has truly transformed my life. Their support has made a huge difference in shaping my future.",
     },
     {
-      image: secondImage,
-      name: "Mohini Chaudhari",
+      image: face2,
+      name: "Mohan Pawar",
       review:
         "I am deeply grateful to Sahakarya Pratisthan. Their encouragement has given me the confidence to move forward.",
     },
     {
-      image: thirdImage,
-      name: "Nikita",
+      image: face3,
+      name: "Jyoti Salunkhe",
       review:
         "Thanks to Sahakarya Pratisthan, my life has taken a positive turn. Their support has helped me progress toward my goals.",
     },
@@ -462,95 +474,96 @@ const HealthHistory = () => {
 
   return (
     <>
-    <div className="health-history-container">
-      {/* Why We Focus on Health */}
-      <div className="why-health-section">
-        <p>
-          Health is the foundation of a thriving individual and community. It is
-          essential for living a fulfilling and productive life, enabling people
-          to pursue their goals and contribute to society. Here's why focusing
-          on health is crucial:
-        </p>
-        <ul>
-          <li>
-            <strong>Improved Quality of Life:</strong> Good health empowers
-            individuals to lead active and energetic lives, free from the
-            limitations imposed by illness or disability.
-          </li>
-          <li>
-            <strong>Economic Impact:</strong> A healthy population is more
-            productive, which drives economic growth by reducing healthcare
-            costs and enhancing workforce efficiency.
-          </li>
-          <li>
-            <strong>Prevention is Better than Cure:</strong> Access to
-            healthcare and preventive measures can reduce the prevalence of
-            chronic diseases, ensuring long-term well-being for communities.
-          </li>
-          <li>
-            <strong>Health Equity:</strong> Ensuring access to healthcare
-            services for all, regardless of their socioeconomic background,
-            promotes equality and social justice.
-          </li>
-          <li>
-            <strong>Building Resilient Communities:</strong> Healthy individuals
-            are better equipped to respond to challenges, be they personal,
-            social, or environmental.
-          </li>
-        </ul>
-        <p>
-          Our health initiatives aim to address these aspects by providing
-          medical assistance, raising awareness, and promoting healthy
-          lifestyles. Together, we can ensure a healthier tomorrow for everyone.
-        </p>
-      </div>
-
-      <div className="heading1 heading05">
-        <h3>
-          <span className="stories-of">STORIES OF</span>
-          <span className="heading-font color-font5 signature-style">
-            Events
-          </span>
-        </h3>
-      </div>
-
-      {workInfoData.map((item, index) => (
-        <div className="work-section" key={index}>
-          <h2 className="work-title">{item.title}</h2>
-          <p className="work-text">{item.text}</p>
-          <Slider
-            className="image-slider"
-            dots={true}
-            infinite={true}
-            slidesToShow={1}
-            slidesToScroll={1}
-            autoplay
-          >
-            {item.images.map((image, imgIndex) => (
-              <div key={imgIndex}>
-                <img
-                  src={image}
-                  alt={`Slide ${imgIndex}`}
-                  className="slider-image"
-                />
-              </div>
-            ))}
-          </Slider>
+      <div className="health-history-container">
+        {/* Why We Focus on Health */}
+        <div className="why-health-section">
+          <p>
+            Health is the foundation of a thriving individual and community. It
+            is essential for living a fulfilling and productive life, enabling
+            people to pursue their goals and contribute to society. Here's why
+            focusing on health is crucial:
+          </p>
+          <ul>
+            <li>
+              <strong>Improved Quality of Life:</strong> Good health empowers
+              individuals to lead active and energetic lives, free from the
+              limitations imposed by illness or disability.
+            </li>
+            <li>
+              <strong>Economic Impact:</strong> A healthy population is more
+              productive, which drives economic growth by reducing healthcare
+              costs and enhancing workforce efficiency.
+            </li>
+            <li>
+              <strong>Prevention is Better than Cure:</strong> Access to
+              healthcare and preventive measures can reduce the prevalence of
+              chronic diseases, ensuring long-term well-being for communities.
+            </li>
+            <li>
+              <strong>Health Equity:</strong> Ensuring access to healthcare
+              services for all, regardless of their socioeconomic background,
+              promotes equality and social justice.
+            </li>
+            <li>
+              <strong>Building Resilient Communities:</strong> Healthy
+              individuals are better equipped to respond to challenges, be they
+              personal, social, or environmental.
+            </li>
+          </ul>
+          <p>
+            Our health initiatives aim to address these aspects by providing
+            medical assistance, raising awareness, and promoting healthy
+            lifestyles. Together, we can ensure a healthier tomorrow for
+            everyone.
+          </p>
         </div>
-      ))}
 
-      {/* <h2 className="section-title">Testimonials</h2> */}
+        <div className="heading1 heading05">
+          <h3>
+            <span className="stories-of">STORIES OF</span>
+            <span className="heading-font color-font5 signature-style">
+              Events
+            </span>
+          </h3>
+        </div>
 
-      <div className="heading1 heading05">
-        <h3>
-          <span className="stories-of">STORIES OF</span>
-          <span className="heading-font color-font5 signature-style">
-            Change
-          </span>
-        </h3>
-      </div>
+        {workInfoData.map((item, index) => (
+          <div className="work-section" key={index}>
+            <h2 className="work-title">{item.title}</h2>
+            <p className="work-text">{item.text}</p>
+            <Slider
+              className="image-slider"
+              dots={true}
+              infinite={true}
+              slidesToShow={1}
+              slidesToScroll={1}
+              autoplay
+            >
+              {item.images.map((image, imgIndex) => (
+                <div key={imgIndex}>
+                  <img
+                    src={image}
+                    alt={`Slide ${imgIndex}`}
+                    className="slider-image"
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        ))}
 
-      <div className="reviews">
+        {/* <h2 className="section-title">Testimonials</h2> */}
+
+        <div className="heading1 heading05">
+          <h3>
+            <span className="stories-of">STORIES OF</span>
+            <span className="heading-font color-font5 signature-style">
+              Change
+            </span>
+          </h3>
+        </div>
+
+        {/* <div className="reviews">
         {reviewData.map((item, index) => (
           <div className="review-card" key={index}>
             <img src={item.image} alt={item.name} className="review-image" />
@@ -558,9 +571,31 @@ const HealthHistory = () => {
             <p className="review-text">{item.review}</p>
           </div>
         ))}
+      </div> */}
+        <div className="w-3/4 m-auto">
+          <div className="mt-4">
+            <Slider {...settings}>
+              {reviewData.map((d, index) => (
+                <div className="education-card" key={index}>
+                  <div className="education-card-header">
+                    <img
+                      src={d.image}
+                      alt={d.name}
+                      className="h-44 w-44 rounded-full"
+                    />
+                  </div>
+                  <div className="education-card-content">
+                    <p className="education-card-name">{d.name}</p>
+                    <p>{d.review}</p>
+                    {/* <button className="education-card-button">Read More</button> */}
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
       </div>
-    </div>
-    <Footer/>
+      <Footer />
     </>
   );
 };
