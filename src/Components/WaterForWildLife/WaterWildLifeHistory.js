@@ -644,45 +644,12 @@ import face3 from "../../Assets/waterForWild/StoriesOfChange/face3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import education1 from "../../Assets/Education/firstSlide/education1.jpg";
-import education2 from "../../Assets/Education/firstSlide/education2.jpg";
-import education3 from "../../Assets/Education/firstSlide/education3.jpg";
-import education4 from "../../Assets/Education/firstSlide/education4.jpg";
-import education5 from "../../Assets/Education/firstSlide/education5.jpg";
-import education6 from "../../Assets/Education/firstSlide/education6.jpg";
-import education7 from "../../Assets/Education/firstSlide/education7.jpg";
-import education8 from "../../Assets/Education/firstSlide/education8.jpg";
-import education9 from "../../Assets/Education/firstSlide/education9.jpg";
-import education10 from "../../Assets/Education/firstSlide/education10.jpg";
-import education11 from "../../Assets/Education/secondSlide/education11.jpg";
-import education12 from "../../Assets/Education/secondSlide/education12.jpg";
-import education13 from "../../Assets/Education/secondSlide/education13.jpg";
-import education14 from "../../Assets/Education/secondSlide/education14.jpg";
-import education15 from "../../Assets/Education/secondSlide/education15.jpg";
-import education16 from "../../Assets/Education/secondSlide/education16.jpg";
-import education17 from "../../Assets/Education/secondSlide/education17.jpg";
-import education18 from "../../Assets/Education/secondSlide/education18.jpg";
-import education19 from "../../Assets/Education/secondSlide/education19.jpg";
-import education20 from "../../Assets/Education/secondSlide/education20.jpg";
-import education21 from "../../Assets/Education/thirdSlide/education21.jpg";
-import education22 from "../../Assets/Education/thirdSlide/education22.jpg";
-import education23 from "../../Assets/Education/thirdSlide/education23.jpg";
-import education24 from "../../Assets/Education/thirdSlide/education24.jpg";
-import education31 from "../../Assets/Education/fourthSlide/education31.jpg";
-import education32 from "../../Assets/Education/fourthSlide/education32.jpg";
-import education33 from "../../Assets/Education/fourthSlide/education33.jpg";
-import education34 from "../../Assets/Education/fourthSlide/education34.jpg";
-import education35 from "../../Assets/Education/fourthSlide/education35.jpg";
-import education36 from "../../Assets/Education/fourthSlide/education36.jpg";
-import education37 from "../../Assets/Education/fourthSlide/education37.jpg";
-import education38 from "../../Assets/Education/fourthSlide/education38.jpg";
-import education39 from "../../Assets/Education/fourthSlide/education39.jpg";
-import education40 from "../../Assets/Education/fourthSlide/education40.jpg";
-import education41 from "../../Assets/Education/fifthSlide/education41.jpg";
-import education42 from "../../Assets/Education/fifthSlide/education42.jpg";
-import education43 from "../../Assets/Education/fifthSlide/education43.jpg";
-import education44 from "../../Assets/Education/fifthSlide/education44.jpg";
-import education45 from "../../Assets/Education/fifthSlide/education45.jpg";
-import education46 from "../../Assets/Education/fifthSlide/education46.jpg";
+import water1 from "../../Assets/waterForWild/firstSlide/water1.jpg";
+import Water2 from "../../Assets/waterForWild/firstSlide/Water2.jpg";
+import water3 from "../../Assets/waterForWild/firstSlide/water3.jpg";
+import water4 from "../../Assets/waterForWild/firstSlide/water4.jpg";
+import water5 from "../../Assets/waterForWild/firstSlide/water5.jpg";
+import water6 from "../../Assets/waterForWild/firstSlide/water6.jpg";
 
 const WaterWildLifeHistory = () => {
   const navigate = useNavigate();
@@ -697,70 +664,60 @@ const WaterWildLifeHistory = () => {
 
   const workInfoData = [
     {
-      images: [
-        education1,
-        education2,
-        education3,
-        education4,
-        education5,
-        education6,
-        education7,
-        education8,
-        education9,
-        education10,
-      ],
-      title: "Shivaji Maratha Bording School,Dhule (19 Feb 2022)",
-      text: "On the special occasion of Shiv Jayanti, our team at Sahkarya Pratisthan took a heartfelt initiative to inspire and support the young minds at the Shivaji Maratha Boarding School. Recognizing the challenges faced by the 60 orphaned students, we donated school bags to provide them with essential educational tools. Additionally, we organized a comprehensive medical camp to address their healthcare needs and ensure their well-being. This initiative aimed to motivate these children, instill hope, and empower them through education and good health. The event stood as a tribute to Chhatrapati Shivaji Maharaj's vision of uplifting the underprivileged and fostering a brighter future for all.",
+      images: [water6, Water2, water3, water4, water5, water1],
+      title:
+        "All over Dhule city we established water pots ,Dhule (28 Apr 2024)",
+      text: "On behalf of the summer season, we noticed that all the street animals were thirsty and looking for water. Therefore, 'Sahaarya Pratishthan' recognized the need and established water pots for them ",
     },
-    {
-      images: [
-        education11,
-        education12,
-        education13,
-        education14,
-        education15,
-        education16,
-        education17,
-        education18,
-        education19,
-        education20,
-      ],
-      title: "Kamlabai Girls High School,Dhule (19 Feb 2023)",
-      text: "On the auspicious occasion of Shiv Jayanti, Sahkarya Pratisthan extended its support to the young girls at Kamlabai Girls High School in Dhule. Understanding the challenges faced by orphaned students, we donated 80 school bags and notebooks to empower their educational journey. This initiative was driven by our commitment to providing equal opportunities for education and growth. Through this gesture, we aimed to inspire these young girls to pursue their dreams and honor the legacy of Chhatrapati Shivaji Maharaj, who championed the cause of upliftment and empowerment for all. ",
-    },
-    {
-      images: [education21, education22, education23, education24],
-      title: "Shree Sanskar Matimand School,Dhule (4 Jun 2023)",
-      text: "At Shree Sanskar Matimand School, an institution dedicated to the education of blind and specially-abled girls, Sahkarya Pratisthan extended its support by donating essential educational equipment. Additionally, we organized a workshop aimed at enhancing their future educational opportunities and personal development. This initiative was undertaken to empower these young girls, helping them overcome challenges and unlock their true potential. Guided by our mission of inclusivity and education for all, we are proud to contribute to shaping a brighter future for these remarkable students.",
-    },
-    {
-      images: [
-        education31,
-        education32,
-        education33,
-        education34,
-        education35,
-        education36,
-        education37,
-        education38,
-        education39,
-        education40,
-      ],
-      title: "Blind Boys & Girls School,Dhule (19 Feb 2024)",
-      text: "On 19th February 2024, our NGO had the privilege of supporting the Blind Boys & Girls School in Dhule by donating school uniforms and talking watches to the students. These donations aim to empower visually impaired children, providing them with tools to foster independence and confidence in their daily lives.The event was graced by the presence of Dhule SP, Shri Shrikant Dhivare, who honored us with his valuable time and support. This initiative reflects our continued commitment to the education and well-being of differently-abled students, helping them overcome challenges and achieve their dreams.",
-    },
-    {
-      images: [
-        education41,
-        education42,
-        education43,
-        education44,
-        education45,
-        education46,
-      ],
-      title: "Anand Vihar Ashram,Dhule (15 Oct 2024)",
-      text: "On 15th September 2024, our NGO organized a heartfelt program at Anand Vihar Ashram, Dhule, to support 55 orphaned students by donating school bags. This initiative was arranged to commemorate the spirit of Independence Day, fostering a sense of encouragement and empowerment among these young minds.The program aimed to inspire the children to pursue their education with enthusiasm and confidence, symbolizing our dedication to their holistic development. This small gesture is a step towards ensuring that every child has the tools they need to succeed and contribute positively to society.",
-    },
+    // {
+    //   images: [
+    //     education11,
+    //     education12,
+    //     education13,
+    //     education14,
+    //     education15,
+    //     education16,
+    //     education17,
+    //     education18,
+    //     education19,
+    //     education20,
+    //   ],
+    //   title: "Kamlabai Girls High School,Dhule (19 Feb 2023)",
+    //   text: "On the auspicious occasion of Shiv Jayanti, Sahkarya Pratisthan extended its support to the young girls at Kamlabai Girls High School in Dhule. Understanding the challenges faced by orphaned students, we donated 80 school bags and notebooks to empower their educational journey. This initiative was driven by our commitment to providing equal opportunities for education and growth. Through this gesture, we aimed to inspire these young girls to pursue their dreams and honor the legacy of Chhatrapati Shivaji Maharaj, who championed the cause of upliftment and empowerment for all. ",
+    // },
+    // {
+    //   images: [education21, education22, education23, education24],
+    //   title: "Shree Sanskar Matimand School,Dhule (4 Jun 2023)",
+    //   text: "At Shree Sanskar Matimand School, an institution dedicated to the education of blind and specially-abled girls, Sahkarya Pratisthan extended its support by donating essential educational equipment. Additionally, we organized a workshop aimed at enhancing their future educational opportunities and personal development. This initiative was undertaken to empower these young girls, helping them overcome challenges and unlock their true potential. Guided by our mission of inclusivity and education for all, we are proud to contribute to shaping a brighter future for these remarkable students.",
+    // },
+    // {
+    //   images: [
+    //     education31,
+    //     education32,
+    //     education33,
+    //     education34,
+    //     education35,
+    //     education36,
+    //     education37,
+    //     education38,
+    //     education39,
+    //     education40,
+    //   ],
+    //   title: "Blind Boys & Girls School,Dhule (19 Feb 2024)",
+    //   text: "On 19th February 2024, our NGO had the privilege of supporting the Blind Boys & Girls School in Dhule by donating school uniforms and talking watches to the students. These donations aim to empower visually impaired children, providing them with tools to foster independence and confidence in their daily lives.The event was graced by the presence of Dhule SP, Shri Shrikant Dhivare, who honored us with his valuable time and support. This initiative reflects our continued commitment to the education and well-being of differently-abled students, helping them overcome challenges and achieve their dreams.",
+    // },
+    // {
+    //   images: [
+    //     education41,
+    //     education42,
+    //     education43,
+    //     education44,
+    //     education45,
+    //     education46,
+    //   ],
+    //   title: "Anand Vihar Ashram,Dhule (15 Oct 2024)",
+    //   text: "On 15th September 2024, our NGO organized a heartfelt program at Anand Vihar Ashram, Dhule, to support 55 orphaned students by donating school bags. This initiative was arranged to commemorate the spirit of Independence Day, fostering a sense of encouragement and empowerment among these young minds.The program aimed to inspire the children to pursue their education with enthusiasm and confidence, symbolizing our dedication to their holistic development. This small gesture is a step towards ensuring that every child has the tools they need to succeed and contribute positively to society.",
+    // },
   ];
 
   const reviewData = [
