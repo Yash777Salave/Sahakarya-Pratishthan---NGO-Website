@@ -12,7 +12,6 @@ const MainLayout = () => {
       <Home />
       <Work />
       <Testimonial />
-      <Contact />
       <Footer />
     </div>
   );

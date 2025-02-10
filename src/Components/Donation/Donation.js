@@ -7,9 +7,9 @@ import CountUp from "react-countup";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import api from '../../Config.js/Config';
-import { toast } from 'react-toastify';
+import { toast,ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import ScannerPopup from "../Popups/ScannerPopup";
 
 export default function Donation() {
   const [formData, setFormData] = useState({
@@ -26,8 +26,10 @@ export default function Donation() {
     agreeToTerms: false,
   });
 
-  const [totalDonations , setTotalDonation] = useState('');
-  const [totalDoner , setTotalDoner] = useState('');
+  const [showPaymentPopup, setShowPaymentPopup] = useState(false);
+
+  const [totalDonations, setTotalDonation] = useState('');
+  const [totalDoner, setTotalDoner] = useState('');
 
   const [errors, setErrors] = useState({});
   const countries = ["India", "USA", "Canada", "UK", "Australia"];
@@ -76,6 +78,31 @@ export default function Donation() {
         console.log("create api reasoncse", data);
 
         if (data.success) {
+          console.log("i am in scnaner");
+
+          setShowPaymentPopup(true);
+
+          setFormData({
+            amount: "",
+            fullName: '',
+            dob: '',
+            phone: '',
+            address: '',
+            panNo: '',
+            pinCode: '',
+            city: '',
+            country: '',
+            email: '',
+            agreeToTerms: false,
+          });
+
+          return
+
+        } else {
+          alert("Failed to create payment . please try again");
+        }
+
+        if (data.success) {
           console.log("we get success data IN CREATE API");
 
 
@@ -118,7 +145,7 @@ export default function Donation() {
                     progress: undefined,
                     theme: "light",
                   });
-                  setFormData( {   
+                  setFormData({
                     amount: "",
                     fullName: '',
                     dob: '',
@@ -194,23 +221,25 @@ export default function Donation() {
       }
     }
   }
-const getTotalDonation =async() => {
-  try {
-  const {data} = await api.get('/api/donations/total-donation-totalDoner')
-if(data.status){
+  const getTotalDonation = async () => {
+    try {
+      const { data } = await api.get('/api/donations/total-donation-totalDoner')
+      if (data.status) {
 
-  setTotalDonation(data.data[0].totalDonations || 0)
-  setTotalDoner(data.data[0].totalDoner || 0);
-}else {
-  console.error("Failed to fetch data:", data.message);}
-      
-} catch (error) {
-  console.error("Error while fetching total donation and donor count:", error);
-}
-}
-useEffect(()=> {
-getTotalDonation();
-},[])
+        setTotalDonation(data.data[0].totalDonations || 0)
+        setTotalDoner(data.data[0].totalDoner || 0);
+      } else {
+        console.error("Failed to fetch data:", data.message);
+      }
+
+    } catch (error) {
+      console.error("Error while fetching total donation and donor count:", error);
+    }
+  }
+  const handleClosePaymentPopup = () => setShowPaymentPopup(false);
+  useEffect(() => {
+    getTotalDonation();
+  }, [])
   useEffect(() => {
     AOS.init({
       duration: 1200, // Animation duration in milliseconds
@@ -231,14 +260,14 @@ getTotalDonation();
         justifyContent: 'center',
         minHeight: '30vh',
         position: 'relative',
-      }}data-aos = "fade-down"
+      }} data-aos="fade-down"
       >
         {/* Button Positioned Absolutely */}
         <div style={{
           position: 'absolute',
           top: '0',
           right: '0',
-        }} data-aos = "fade-down"
+        }} data-aos="fade-down"
         >
           <Button
             variant="outlined"
@@ -257,6 +286,7 @@ getTotalDonation();
           >
             Donate Us
           </Button>
+          <ToastContainer />
         </div>
 
         {/* Grid Section */}
@@ -264,13 +294,13 @@ getTotalDonation();
           <Grid item xs={12} md={6}>
             <Card style={{ padding: '1rem', textAlign: 'center' }}>
               <Typography variant="h6" gutterBottom>Total Donations</Typography>
-              <Typography variant="h4" color="primary" data-aos = "fade-up"><CountUp end={totalDonations} duration={5} />+</Typography>
+              <Typography variant="h4" color="primary" data-aos="fade-up"><CountUp end={totalDonations} duration={5} />+</Typography>
             </Card>
           </Grid>
           <Grid item xs={12} md={6}>
             <Card style={{ padding: '1rem', textAlign: 'center' }}>
               <Typography variant="h6" gutterBottom>Total Donors</Typography>
-              <Typography variant="h4" color="primary" data-aos = "fade-up"><CountUp end={totalDoner} duration={5} />+</Typography>
+              <Typography variant="h4" color="primary" data-aos="fade-up"><CountUp end={totalDoner} duration={5} />+</Typography>
             </Card>
           </Grid>
         </Grid>
@@ -308,8 +338,43 @@ getTotalDonation();
               Your Generosity Can Change a Life
             </Typography>
             <Typography variant="body1" gutterBottom>
-              At <b>सहकार्य प्रतिष्ठान</b> , we believe that every small act of kindness can have a ripple effect. Your donation isn't just a monetary gift it's a lifeline to those who need it most. It’s a chance to give someone a brighter future, a chance to create hope where there was none.
+              At सहकार्य प्रतिष्ठान, we believe that even the smallest act of kindness can create a ripple effect of change. Your donation is more than just a monetary gift—it’s a lifeline for those who need it most.
+
+              With your support, we can:<br />
+              ✅ Provide food and shelter to the underprivileged<br />
+              ✅ Support education for children in need<br />
+              ✅ Offer medical assistance to those who cannot afford it<br />
+              ✅ Empower women and marginalized communities<br />
+              ✅ Create sustainable opportunities for a better future<br />
             </Typography>
+            <br />
+            <Typography variant="h5" gutterBottom>
+              Why Donate?
+            </Typography>
+            <Typography>
+              Every rupee you contribute helps bring hope, dignity, and opportunity to someone’s life. Whether it’s feeding a hungry child, helping a student get an education, or providing urgent medical aid, your donation has a direct and lasting impact.
+            </Typography><br/>
+
+            <Typography variant="h5" gutterBottom>
+              How You Can Help?
+            </Typography>
+            <Typography>
+              💖 One-Time Donation: A small contribution can make a big difference.<br />
+              📅 Monthly Giving: Become a recurring donor and support long-term change.<br />
+              🎁 In-Kind Donations: Donate food, clothes, books, or medical supplies.<br />
+              🙌 Volunteer With Us: Your time and skills are just as valuable as your donation.  <br />          </Typography><br/>
+
+            <Typography variant="h5" gutterBottom>
+              Your Contribution Matters
+            </Typography>
+            <Typography>
+              No amount is too small—every donation brings hope to someone in need. Join us in making a difference today!<br />
+
+              🔹 Donate Now and be the reason someone smiles.<br />
+              🔹 Together, we can create a better tomorrow!<br />
+
+              💙 Thank you for your generosity! 💙<br /></Typography>
+
             <Typography variant="body2" color="textSecondary" style={{ marginTop: '1rem' }}>
               सहकार्य प्रतिष्ठान is a registered non-profit organization eligible for tax benefits under section 80G.
             </Typography>
@@ -320,8 +385,8 @@ getTotalDonation();
 
           {/* Right Section (Form) */}
 
-          <Grid item xs={12} md={6} ref={formRef}  data-aos="fade-left" >
-            <div style={{ border: '2px solid #ccc', padding: '20px', borderRadius: '8px',backgroundColor: '#f4f4f4' }} >
+          <Grid item xs={12} md={6} ref={formRef} data-aos="fade-left" >
+            <div style={{ border: '2px solid #ccc', padding: '20px', borderRadius: '8px', backgroundColor: '#f4f4f4' }} >
               <form onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
                   <Grid item xs={12}>
@@ -395,7 +460,7 @@ getTotalDonation();
                       value={formData.address}
                       onChange={handleChange}
                       fullWidth
-                      inputProps={{maxLength: 100 }}
+                      inputProps={{ maxLength: 100 }}
                       error={!!errors.address}
                       helperText={errors.address}
                     />
@@ -405,14 +470,14 @@ getTotalDonation();
                       label="PAN Number"
                       name="panNo"
                       value={formData.panNo}
-                      onChange={(e)=> handleChange({
+                      onChange={(e) => handleChange({
                         target: {
                           name: e.target.name,
                           value: e.target.value.toUpperCase(),
                         },
                       })}
                       fullWidth
-                      inputProps={ { maxLength: 10 }}
+                      inputProps={{ maxLength: 10 }}
                       error={!!errors.panNo}
                       helperText={errors.panNo}
                     />
@@ -421,11 +486,11 @@ getTotalDonation();
                     <TextField
                       label="PIN Code"
                       name="pinCode"
-                      onInput={(e) => e.target.value = e.target.value.replace(/[^0-9]/g,'')}
+                      onInput={(e) => e.target.value = e.target.value.replace(/[^0-9]/g, '')}
                       value={formData.pinCode}
                       onChange={handleChange}
                       fullWidth
-                      inputProps={{ maxLength: 6}}
+                      inputProps={{ maxLength: 6 }}
                       error={!!errors.pinCode}
                       helperText={errors.pinCode}
                     />
@@ -437,7 +502,7 @@ getTotalDonation();
                       value={formData.city}
                       onChange={handleChange}
                       fullWidth
-                      inputProps={{ maxLength: 20}}
+                      inputProps={{ maxLength: 20 }}
                       error={!!errors.city}
                       helperText={errors.city}
                     />
@@ -591,6 +656,12 @@ getTotalDonation();
           </Grid>
         </Grid>
       </Container>
+      {showPaymentPopup && ( // Correct conditional rendering
+        <ScannerPopup
+          open={showPaymentPopup}
+          onClose={handleClosePaymentPopup}
+        />
+      )}
 
       <Footer />
     </>

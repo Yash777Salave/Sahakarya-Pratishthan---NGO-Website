@@ -4,6 +4,8 @@ import firstImage from "../../Assets/homeImages/firstImage.jpg";
 import { useState,useEffect } from "react";
 import Navbar from "../Navbar";
 import WaterWildLifeHistory from "./WaterWildLifeHistory";
+import video from "../../Assets/waterForWild/videos/water.mp4"
+
 const WaterWildlife = () =>
 {
 
@@ -25,24 +27,77 @@ const WaterWildlife = () =>
       }, [images.length]);
 
 
+//     return (
+//         <div>
+//         <Navbar/>
+
+//  <      div className="home-container">
+//  {/* <      div>
+//           Display the current image
+//           <img src={images[currentIndex]} alt="Slider" />
+//         </div> */}
+//  <div>
+//                     {/* Display the video */}
+//                     <video 
+//                         src={video} 
+//                         controls // Add controls (play/pause, etc.)
+//                         loop    // Optional: Loop the video
+//                         muted   // Optional: Start muted
+//                         autoPlay // Optional: Autoplay the video (use with caution)
+//                         className="home-video" // Add a class for styling
+//                     >
+//                         Your browser does not support the video tag. {/* Fallback message */}
+//                     </video>
+//                 </div>
+//         <WaterWildLifeHistory/>
+//         </div>
+//         </div>
+//     )
+return (
+  <div>
+      <Navbar />
+      <div className="home-container">
+          <style>
+              {`
+              .video-container {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  margin-top: 20px; /* Add space from the top */
+              }
+
+              .home-video {
+                  width: 500px; /* Set a fixed width */
+                  height: 600px; /* Maintain 16:9 aspect ratio */
+                  border-radius: 10px; /* Smooth rounded corners */
+                  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Nice shadow */
+                  border: 3px solid #ccc; /* Soft border */
+                  object-fit: cover; /* Keeps video content properly scaled */
+              }
+              `}
+          </style>
+
+          <div className="video-container">
+              <video 
+                  src={video} 
+                  controls
+                  loop
+                  muted
+                  autoPlay
+                  className="home-video"
+              >
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+
+          <WaterWildLifeHistory />
+      </div>
+  </div>
+);
 
 
 
-
-    return (
-        <div>
-        <Navbar/>
-
- <      div className="home-container">
- <      div>
-          {/* Display the current image */}
-          <img src={images[currentIndex]} alt="Slider" />
-        </div>
-
-        <WaterWildLifeHistory/>
-        </div>
-        </div>
-    )
 }
 
 export default WaterWildlife;

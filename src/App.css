@@ -44,7 +44,7 @@ nav {
 }
 .primary-button {
   padding: 0.9rem 1.75rem;
-  background-color: white;
+  background-color: rgba(239, 18, 6, 0.895);
   outline: none;
   border: none;
   border-radius: 5rem;

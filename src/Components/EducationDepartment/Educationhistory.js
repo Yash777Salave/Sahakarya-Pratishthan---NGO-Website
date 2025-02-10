@@ -996,7 +996,7 @@ const Educationhistory = () => {
     <>
       <div className="health-history-container">
         {/* Why We Focus on Health */}
-        <div className="why-health-section">
+        <div className="why-health-section">  
           <p
             style={{
               fontSize: "40px",
