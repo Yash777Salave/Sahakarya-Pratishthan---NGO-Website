@@ -880,6 +880,12 @@ import education43 from "../../Assets/Education/fifthSlide/education43.jpg";
 import education44 from "../../Assets/Education/fifthSlide/education44.jpg";
 import education45 from "../../Assets/Education/fifthSlide/education45.jpg";
 import education46 from "../../Assets/Education/fifthSlide/education46.jpg";
+//----
+import education47 from "../../Assets/Education/seventhSlide/education47.jpeg";
+import education49 from "../../Assets/Education/seventhSlide/education49.jpeg";
+import education50 from "../../Assets/Education/seventhSlide/education50.jpeg";
+import education51 from "../../Assets/Education/seventhSlide/education51.jpeg";
+import education48 from "../../Assets/Education/seventhSlide/education48.jpeg";
 
 import health1 from "../../Assets/Health/secondSlide/health1.JPG";
 import health2 from "../../Assets/Health/secondSlide/health2.JPG";
@@ -904,6 +910,11 @@ const Educationhistory = () => {
   };
 
   const workInfoData = [
+    {
+      images: [education47, education48, education50, education51, education49],
+      title: "Digital Learning Initiative at ZP Primary School, Dattewadi Nere",
+      text: "implemented a digital education initiative at Zilla Parishad Primary School, Dattewadi Nere (Mulshi, Pune). As part of this effort, digital learning facilities were installed in two classrooms by our team, including the provision of projectors and projector screens to enhance the teaching and learning experience. Additionally, one more classroom was equipped with similar digital support through the local Gram Panchayat. This initiative aims to make education more interactive, engaging, and accessible for students, enabling them to learn in a more effective and modern way while contributing to their brighter future.",
+    },
     {
       images: [
         education1,
@@ -969,6 +980,7 @@ const Educationhistory = () => {
       title: "Anand Vihar Ashram,Dhule (15 Oct 2024)",
       text: "On 15th September 2024, our NGO organized a heartfelt program at Anand Vihar Ashram, Dhule, to support 55 orphaned students by donating school bags. This initiative was arranged to commemorate the spirit of Independence Day, fostering a sense of encouragement and empowerment among these young minds.The program aimed to inspire the children to pursue their education with enthusiasm and confidence, symbolizing our dedication to their holistic development. This small gesture is a step towards ensuring that every child has the tools they need to succeed and contribute positively to society.",
     },
+    //------
   ];
 
   const reviewData = [
@@ -996,7 +1008,7 @@ const Educationhistory = () => {
     <>
       <div className="health-history-container">
         {/* Why We Focus on Health */}
-        <div className="why-health-section">  
+        <div className="why-health-section">
           <p
             style={{
               fontSize: "40px",

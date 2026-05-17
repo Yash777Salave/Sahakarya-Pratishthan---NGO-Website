@@ -9,10 +9,12 @@ img {
   height: auto;
 }
 
-.reviewImage
-{
-  max-width: 50%;
- 
+.reviewImage {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;   /* keeps image nicely cropped */
+  border-radius: 50%;  /* circular image */
+  flex-shrink: 0;      /* prevents shrinking */
 }
 .App {
   min-height: 100vh;
@@ -240,9 +242,9 @@ nav {
 }
 
 
-.testimonial-section-bottom {
+/* .testimonial-section-bottom {
   margin-top: 2rem;
-  background-color: white;
+  background-color: red;
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
@@ -253,7 +255,29 @@ nav {
   flex-direction: column;
   text-align: center;
   box-shadow: 0px 6px 16px orange;
+} */
+/* ✅ FIXED TESTIMONIAL BOX */
+.testimonial-section-bottom {
+  margin: 2rem auto;
+  background-color: white;
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* prevents jumping */
+
+  width: 750px;     /* fixed */
+  height: 500px;    /* fixed */
+
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0px 6px 16px orange;
+
+  overflow: hidden; /* important */
+  
 }
+
 
 .testimonial-navigation {
   display: flex; /* Flexbox to align buttons horizontally */
@@ -276,8 +300,16 @@ nav {
   background-color: #e0e0e0; /* Change background on hover */
 }
 
-.testimonial-section-bottom {
+/* .testimonial-section-bottom {
   margin: 2rem auto;
+} */
+ .testimonial-section-bottom p {
+  font-weight: 700;
+  color: #515151;
+  max-width: 500px;
+  font-size: 1.1rem;
+  margin: 2rem 0rem;
+  
 }
 
 .event-toggle {
@@ -729,6 +761,7 @@ h2 {
   .work-section-wrapper {
     margin-top: 5rem !important;
     background-color: rgb(255, 250, 240) !important;
+    
   }
   .work-section-bottom {
     margin-top: 1rem !important;
@@ -749,7 +782,9 @@ h2 {
   }
   .footer-wrapper {
     flex-direction: column;
- 
+   width: 100%;
+  position: relative;
+  clear: both;
   }
   .footer-section-two {
     flex-direction: column;

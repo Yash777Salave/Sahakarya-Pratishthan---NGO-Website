@@ -12,7 +12,7 @@ const testimonialsData = [
   },
   {
     name: "Amita Patil",
-    text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "Sahakarya Pratishthan stands as a beacon of hope through its commitment to education, healthcare, and environmental sustainability. Their initiatives have created lasting positive change in the community. Supporting them is a matter of pride.",
     image: review2,
   },
   // Add more testimonials as needed
@@ -25,26 +25,28 @@ const Testimonial = () => {
 
   const handleNext = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex + 1) % testimonialsData.length // Loop back to the start
+      (prevIndex) => (prevIndex + 1) % testimonialsData.length, // Loop back to the start
     );
   };
 
   const handlePrev = () => {
     setCurrentIndex(
       (prevIndex) =>
-        (prevIndex - 1 + testimonialsData.length) % testimonialsData.length // Loop back to the end
+        (prevIndex - 1 + testimonialsData.length) % testimonialsData.length, // Loop back to the end
     );
   };
 
   const startAutoRotate = () => {
+    stopAutoRotate();
     intervalRef.current = setInterval(() => {
       handleNext();
-    }, 5000); // Rotate every 3 seconds
+    }, 5000);
   };
 
   const stopAutoRotate = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
+      intervalRef.current = null;
     }
   };
 
@@ -99,8 +101,7 @@ const Testimonial = () => {
           <AiFillStar />
           <AiFillStar />
         </div>
-        <h2>{name}</h2>
-
+        <h2 style={{ fontWeight: "700", marginTop: "10px" }}>{name}</h2>
         {/* Navigation buttons placed here */}
         <div className="testimonial-navigation">
           <button onClick={handlePrev}>

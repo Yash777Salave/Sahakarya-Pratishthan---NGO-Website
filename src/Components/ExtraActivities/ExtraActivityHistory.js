@@ -438,7 +438,6 @@ const ExtraActivityHistory = () => {
       review:
         "Thanks to Sahkarya Pratisthan, my life has taken a positive turn. Their motivation for me to focus on education, along with the essential supplies they provide, has made a significant difference. Even a small amount of support from them has helped me progress toward my goals.",
     },
-   
   ];
 
   return (
